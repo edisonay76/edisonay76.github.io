@@ -6,7 +6,11 @@ menu:
 #- {name: 'contact', url: '/contact'}
 
 talks:
-- {title: 'Primary Investigator', date: 'Researcher', venue: 'Physics & Astronomy'}
+  - {title: 'Explicit valuation of elliptic nets for elliptic curves'
+    date: 'November 12, 2025'
+    venue: 'University of Warwick Number Theory Seminar'
+    url: 'warwick-talk-2025'}
+    
 courses:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
 - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
