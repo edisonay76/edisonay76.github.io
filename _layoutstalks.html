@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<h3 class="fw-bold border-bottom pb-3 mb-5">Talks</h3>
+
+{% for talk in site.data.settings.talks %}
+<div class="mb-4">
+  <h5>{{ talk.title }}</h5>
+  <p class="mb-1"><strong>Date:</strong> {{ talk.date }}</p>
+  <p class="mb-1"><strong>Venue:</strong> {{ talk.venue }}</p>
+
+  {% if talk.abstract %}
+    <p class="mt-2"><strong>Abstract:</strong> {{ talk.abstract }}</p>
+  {% endif %}
+
+  {% if talk.url %}
+    <p><a href="{{ talk.url }}">Abstract / Event Page</a></p>
+  {% endif %}
+</div>
+<hr class="my-4">
+{% endfor %}
