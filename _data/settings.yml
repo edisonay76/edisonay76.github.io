@@ -17,7 +17,7 @@ courses:
 
 social:
 #- {icon: 'github', link: 'https://github.com/LeNPaul'}
-#- {icon: 'twitter', link: 'https://twitter.com/paululele'}
+- {icon: 'orcid', link: 'https://orcid.org/0009-0003-9666-0651'}
 - {icon: 'instagram', link: 'https://instagram.com/paululele'}
 - {icon: 'linkedin', link: 'https://linkedin.com/in/edisonay'}
 
