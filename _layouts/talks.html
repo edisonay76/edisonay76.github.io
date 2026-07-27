@@ -1,6 +1,5 @@
 ---
-layout: talks
-title: "Talks"
+layout: default
 ---
 
 {{ content }}
@@ -8,18 +7,14 @@ title: "Talks"
 <h3 class="fw-bold border-bottom pb-3 mb-5">Talks</h3>
 
 {% for talk in site.data.settings.talks %}
-<div class="mb-4">
-  <h5>{{ talk.title }}</h5>
-  <p class="mb-1"><strong>Date:</strong> {{ talk.date }}</p>
-  <p class="mb-1"><strong>Venue:</strong> {{ talk.venue }}</p>
-
-  {% if talk.abstract %}
-    <p class="mt-2"><strong>Abstract:</strong> {{ talk.abstract }}</p>
-  {% endif %}
-
-  {% if talk.url %}
-    <p><a href="{{ talk.url }}">Abstract / Event Page</a></p>
-  {% endif %}
+<div class="row g-4 mb-5">
+  <div class="col-md-12">
+    <h5>{{ talk.title }}</h5>
+    <p class="mb-1"><strong>Date:</strong> {{ talk.date }}</p>
+    <p class="mb-1"><strong>Venue:</strong> {{ talk.venue }}</p>
+    
+    <!-- This links to the individual abstract page -->
+    <p class="mt-2"><a href="{{ site.github.url }}/talks/{{ talk.url }}" class="btn btn-outline-primary btn-sm">Abstract</a></p>
+  </div>
 </div>
-<hr class="my-4">
 {% endfor %}
