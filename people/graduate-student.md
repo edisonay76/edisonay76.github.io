@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Graduate Student"
+title: "Methods for studying integral points on elliptic curves"
 ---
 
 Researcher - Physics & Astronomy
